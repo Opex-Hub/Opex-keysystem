@@ -1,0 +1,27 @@
+name: Auto Update Key
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Runs automatically every day at 00:00 UTC
+  workflow_dispatch:    # Allows you to click "Run workflow" manually whenever you want
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Generate new key
+        run: |
+          # Generates 8 random uppercase/lowercase letters and numbers
+          RANDOM_STR=$(tr -dc A-Za-z0-9 </dev/urandom | head -c 8)
+          echo "OpexFreeKey-$RANDOM_STR" > key.txt
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'Key Bot'
+          git config --global user.email 'bot@users.noreply.github.com'
+          git add key.txt
+          git commit -m "Daily key update: OpexFreeKey format"
+          git push

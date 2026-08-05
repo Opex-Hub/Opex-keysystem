@@ -2,7 +2,8 @@
     ================================================================
     [ SCRIPT INFORMATION ]
     Project: Opex Hub
-    Author: TU_PAPI
+    Author: Tu_Papi
+    YouTube: https://www.youtube.com/channel/UCAlXXV1Hbvf7WbfXARuVtiQ
     
     [ TERMS AND CONDITIONS ]
     - You ARE allowed to use and modify this script for your own games.
@@ -10,7 +11,7 @@
       ownership of this script.
     - Removing or altering these credits is strictly prohibited.
     
-    Copyright (c) 2026 OPEX. All rights reserved.
+    Copyright (c) 2026 OYB. All rights reserved.
     ================================================================
 ]]
 
@@ -18,12 +19,12 @@
 
 local ProtectionConfig = {
     -- 🔴 CRITICAL: This MUST exactly match the 'Secret' value in your Key System's Config!
-    -- If your Key System has: Secret = "karmadh"
-    -- Then this must also be: SecretKey = "karmadh"
-    SecretKey = "karmadh",
+    -- If your Key System has: Secret = "karmadhi"
+    -- Then this must also be: SecretKey = "karmadhi"
+    SecretKey = "karmadhi",
     
     -- The name of your Hub (shown in the kick message if they try to bypass)
-    HubName = "OPEX HUB"
+    HubName = "Opex Hub"
 }
 
 -- Anti-Bypass Logic: Checks if the Key System successfully set the global variable
@@ -40,6 +41,7 @@ end
 -------------------------------------------------------------------------------
 
 print(ProtectionConfig.OpexHub .. " Loaded Successfully!")
+
 -- OPEX HUB | +1 wings for brainrot
 -- Built for Tu_papi
 

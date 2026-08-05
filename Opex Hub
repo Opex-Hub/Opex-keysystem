@@ -40,8 +40,7 @@ end
 -------------------------------------------------------------------------------
 
 print(ProtectionConfig.OpexHub .. " Loaded Successfully!")
-
--- ✦ OPEX HUB | +1 wings for brainrot ✦
+-- OPEX HUB | +1 wings for brainrot
 -- Built for Tu_papi
 
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
@@ -77,7 +76,7 @@ local Window = Rayfield:CreateWindow({
 -- ==========================================
 local FarmTab = Window:CreateTab("Auto Farm", 4483362458)
 
--- ✦ UPGRADES SECTION ✦
+-- UPGRADES SECTION
 local UpgradeSection = FarmTab:CreateSection("Auto Upgrades")
 
 local autoStamina = false
@@ -91,7 +90,7 @@ FarmTab:CreateToggle({
            while autoStamina do
                local args = {"Stamina", 1}
                ReplicatedStorage:WaitForChild("Remotes"):WaitForChild("UpgradeRequested"):FireServer(unpack(args))
-               task.wait(0.2) -- Small delay to prevent crashing
+               task.wait(0.2)
            end
        end)
    end,
@@ -131,7 +130,7 @@ FarmTab:CreateToggle({
    end,
 })
 
--- ✦ TELEPORT SECTION ✦
+-- TELEPORT SECTION
 local TpSection = FarmTab:CreateSection("Zone Teleports")
 
 FarmTab:CreateButton({
@@ -156,4 +155,4 @@ FarmTab:CreateButton({
 })
 
 -- Load Settings
-Rayfield:LoadConfiguration() 
+Rayfield:LoadConfiguration()

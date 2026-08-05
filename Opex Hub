@@ -1,7 +1,7 @@
 --[[
     ================================================================
     [ SCRIPT INFORMATION ]
-    Project: Opex Hun
+    Project: Opex Hub
     Author: TU_PAPI
     
     [ TERMS AND CONDITIONS ]
@@ -30,7 +30,7 @@ local ProtectionConfig = {
 if not _G[ProtectionConfig.SecretKey] then
     local player = game:GetService("Players").LocalPlayer
     if player then
-        player:Kick("\n🛡️ Unauthorized Execution 🛡️\n\nPlease use the official Key System to run " .. ProtectionConfig.Opex Hub)
+        player:Kick("\n🛡️ Unauthorized Execution 🛡️\n\nPlease use the official Key System to run " .. ProtectionConfig.OpexHub)
     end
     return -- Stops the rest of the script from loading!
 end
@@ -39,7 +39,7 @@ end
 -- 👇 YOUR MAIN SCRIPT CODE STARTS HERE 👇
 -------------------------------------------------------------------------------
 
-print(ProtectionConfig.Opex Hub .. " Loaded Successfully!")
+print(ProtectionConfig.OpexHub .. " Loaded Successfully!")
 -- ✦ OPEX HUB | +1 wings for brainrot ✦
 -- Built for Tu_papi
 

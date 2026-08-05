@@ -1,8 +1,8 @@
 --[[
     ================================================================
     [ SCRIPT INFORMATION ]
-    Project: Opex Hub
-    Author: Tu_Papi
+    Project: Custom Script
+    Author: OYB
     YouTube: https://www.youtube.com/channel/UCAlXXV1Hbvf7WbfXARuVtiQ
     
     [ TERMS AND CONDITIONS ]
@@ -19,19 +19,19 @@
 
 local ProtectionConfig = {
     -- 🔴 CRITICAL: This MUST exactly match the 'Secret' value in your Key System's Config!
-    -- If your Key System has: Secret = "karmadhi"
-    -- Then this must also be: SecretKey = "karmadhi"
-    SecretKey = "karmadhi",
+    -- If your Key System has: Secret = "Test"
+    -- Then this must also be: SecretKey = "Test"
+    SecretKey = "karderr",
     
     -- The name of your Hub (shown in the kick message if they try to bypass)
-    HubName = "Opex Hub"
+    HubName = "OPEX HUB"
 }
 
 -- Anti-Bypass Logic: Checks if the Key System successfully set the global variable
 if not _G[ProtectionConfig.SecretKey] then
     local player = game:GetService("Players").LocalPlayer
     if player then
-        player:Kick("\n🛡️ Unauthorized Execution 🛡️\n\nPlease use the official Key System to run " .. ProtectionConfig.OpexHub)
+        player:Kick("\n🛡️ Unauthorized Execution 🛡️\n\nPlease use the official Key System to run " .. ProtectionConfig.HubName)
     end
     return -- Stops the rest of the script from loading!
 end
@@ -40,7 +40,7 @@ end
 -- 👇 YOUR MAIN SCRIPT CODE STARTS HERE 👇
 -------------------------------------------------------------------------------
 
-print(ProtectionConfig.OpexHub .. " Loaded Successfully!")
+print(ProtectionConfig.HubName .. " Loaded Successfully!")
 
 -- OPEX HUB | +1 wings for brainrot
 -- Built for Tu_papi

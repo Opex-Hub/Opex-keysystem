@@ -40,6 +40,7 @@ end
 -------------------------------------------------------------------------------
 
 print(ProtectionConfig.OpexHub .. " Loaded Successfully!")
+
 -- ✦ OPEX HUB | +1 wings for brainrot ✦
 -- Built for Tu_papi
 
